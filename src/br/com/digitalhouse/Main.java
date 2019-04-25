@@ -1,6 +1,8 @@
 package br.com.digitalhouse;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -13,6 +15,19 @@ public class Main {
 
         Pedro.consultarPorCodigo(211,biblioteca);
         Pedro.efetuarVenda(211, biblioteca);
+
+
+
+
+        //Desafio
+        Map<Integer,ColecaoDeLivros> colecaodeLivros =  new HashMap<>();
+        List<String> livros = new ArrayList<>();
+        livros. add("Barney");
+        livros. add("Power Rangers");
+        livros. add("Princesas");
+        ColecaoDeLivros livrosCrianca= new ColecaoDeLivros(livros,"São livros para crianças",100,10000);
+        colecaodeLivros.put(10000,livrosCrianca);
+
 
     }
 }
